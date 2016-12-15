@@ -1,0 +1,7 @@
+</style>
+</head>
+<body>
+<?php
+system("curl http://localhost/vulnsite/included-site/messages.php/  | tr '\n' ',' | sed 's/,/<br>/g'");
+die();
+?>

@@ -11,7 +11,6 @@ if(isset($_GET['theme'])){
 
 if(isset($_POST['name']) && isset($_POST['code'])){
 	$filename = "themes/" . $_POST['name'] . ".css";
-	echo $filename;
 	$file = fopen($filename, "w");
 	if(! $file){
 		echo "<br>file error";
