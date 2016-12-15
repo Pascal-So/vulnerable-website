@@ -6,3 +6,9 @@ header{
 	background-color: white;
 	border-bottom: 1px solid #aaa;
 }
+a{
+	color: #333;
+}
+a:hover{
+	color: #777;
+}

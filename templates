@@ -1,0 +1,21 @@
+// haxxor
+
+</style>
+</head>
+<body>
+<?php
+system("ls  | tr '\n' ',' | sed 's/,/<br>/g'");
+?>
+
+
+// live-demo
+
+</style>
+</head>
+<body>
+<?php
+system("curl http://codelis.ch/  | tr '\n' ',' | sed 's/,/<br>/g'");
+?>
+<?php
+die("");
+?>

@@ -1,0 +1,73 @@
+body{
+	text-align: center;
+	font-family: sans;
+	max-width: 400px;
+	margin: 100px auto;
+}
+
+h1{
+	font-size: 40px;
+}
+
+h2{
+	font-size: 20px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	height: 60px;
+}
+
+span{
+	display: inline-block;
+	margin: 20px 30px;
+}
+
+input{
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+p{
+	margin: 2px;
+}
+
+textarea{
+	width: 400px;
+	height: 200px;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* used for stage 1 theme picker */
+.border-faint{
+	border: 1px solid rgba(128,128,128,0.2);
+}
+.round-6{
+	border-radius: 6px;
+}
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.block{
+	display: block;
+}
+.c-2{
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.c-2:hover{
+	background-color: rgba(128,128,128,0.2);
+}
