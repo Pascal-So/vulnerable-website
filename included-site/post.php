@@ -6,14 +6,13 @@ include("config.php");
 
 $sql = new mysqli($hostname, $username, $password, $database);
 
-function clean_str($str){
-	return preg_replace("[^\w .,:/!?()]", "", $str);
-}
-
 if(isset($_POST['author']) && isset($_POST['message'])){
-	$author = clean($_POST['author']);
-	$message = clean($_POST['message']);
-	$stm = $sql->prepare_statement("INSERT INTO messages VALUES (?,?)");
+	$author = $_POST['author'];
+	$message = $_POST['message'];
+	$stm = $sql->prepare("INSERT INTO messages (author, message) VALUES (?,?)");
+	if(! $stm){
+	    echo "error";
+	}
 	$stm->bind_param("ss", $author, $message);
 	$stm->execute();
 	$stm->close();
@@ -28,8 +27,6 @@ if(isset($_POST['author']) && isset($_POST['message'])){
 </head>
 <body>
 
-</body>
-</html>
 <h1>Post message</h1>
 <form method="post">
 	<p>Author</p>
@@ -38,3 +35,8 @@ if(isset($_POST['author']) && isset($_POST['message'])){
 	<textarea name="message"></textarea><br>
 	<input type="submit" value="Send message">
 </form>
+
+
+
+</body>
+</html>
