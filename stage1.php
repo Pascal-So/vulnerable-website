@@ -24,9 +24,9 @@ if(isset($_GET['theme'])){
 <body>
 
 <header>
-	<span><a href="index.html">Home</a></span>
-	<span>About</span>
-	<span>Contact</span>
+	<span>Home</span>
+	<span><a href="index.html">Overview</a></span>
+	<span><a href="contact.html">Contact</a></span>
 </header>
 
 <div class="flex border-faint round-6">

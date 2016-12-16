@@ -7,8 +7,8 @@
 <body>
 
 <header>
-	<span><a href="index.html">Home</a></span>
-	<span>About</span>
+	<span>Home</span>
+	<span><a href="index.html">Overview</a></span>
 	<span>Contact</span>
 </header>
 
