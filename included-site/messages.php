@@ -12,7 +12,7 @@
 include('config.php');
 
 $sql = new mysqli($hostname, $username, $password, $database);
-/*
+
 
 $result = $sql->query("SELECT author, message FROM messages");
 while($row = $result->fetch_assoc()){
@@ -27,12 +27,12 @@ while($row = $result->fetch_assoc()){
 
 
 $sql->close();
-*/
+
 ?>
 
 <br>
 <br>
-<p>Post your own messages here: <a href="asd">path/to/postsite</a></p>
+<p>Post your own messages here: <a href="http://codelis.ch/msg/">codelis.ch/msg</a></p>
 <br>
 <br>
 <br>
